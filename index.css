@@ -1191,6 +1191,280 @@ footer span a:hover {
     padding: 15px;
   }
 }
+@media (min-width: 768px) {
+  .my-container {
+    width: 70%;
+  }
+}
 
+@media (max-width: 767px) {
+  .my-container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .my-container {
+    width: 70%;
+  }
+}
 
+@media (max-width: 767px) {
+  .my-container {
+    width: 100%;
+  }
+}
+/* Larger devices (desktops) */
+@media (min-width: 992px) {
+  .my-container {
+    width: 70%;
+  }
+}
 
+/* Medium devices (tablets) */
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  #nav-menu .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  #nav-menu .menu.active {
+    left: 0;
+  }
+
+  #nav-menu .menu li {
+    display: block;
+  }
+
+  #nav-menu .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .home-2 .home-content .text-2 {
+    font-size: 70px;
+  }
+
+  .home-2 .home-content .text-3 {
+    font-size: 35px;
+  }
+
+  .home-2 .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+
+  .max-width {
+    max-width: 930px;
+  }
+
+  #about .about-content .column {
+    width: 100%;
+  }
+
+  #about {
+    height: 150vh;
+  }
+
+  #about .about-content .left img {
+    height: 300px;
+    width: 280px;
+    border-radius: 30px;
+  }
+
+  #about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  #about .about-content .right {
+    flex: 100%;
+  }
+
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 500px) {
+  .home-2 .home-content .text-2 {
+    font-size: 50px;
+  }
+
+  .home-2 .home-content .text-3 {
+    font-size: 27px;
+  }
+
+  #about .about-content .right .text,
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+
+  #about {
+    height: 150vh;
+  }
+
+  #about .about-content .left img {
+    height: 250px;
+    width: 250px;
+    border-radius: 30px;
+  }
+
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+
+  .right form .error-box {
+    width: 150px;
+  }
+
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .regular {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .regular #most-lang img {
+    width: 110%;
+  }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 375px) {
+  #nav-menu .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  #nav-menu .menu.active {
+    left: 0;
+  }
+
+  #nav-menu .menu li {
+    display: block;
+  }
+
+  #nav-menu .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .home-2 .home-content .text-2 {
+    font-size: 50px;
+  }
+
+  .home-2 .home-content .text-3 {
+    font-size: 27px;
+  }
+
+  .home-2 .home-content a {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  .max-width {
+    max-width: 930px;
+  }
+
+  #about .about-content .column {
+    width: 100%;
+  }
+
+  #about {
+    height: 150vh;
+  }
+
+  #about .about-content .left img {
+    height: 250px;
+    width: 250px;
+    border-radius: 30px;
+  }
+
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+
+  .right form .error-box {
+    width: 150px;
+  }
+
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .regular {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .regular #most-lang img {
+    width: 85%;
+  }
+}
