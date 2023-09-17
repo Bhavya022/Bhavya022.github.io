@@ -92,4 +92,10 @@ $(document).ready(function () {
         "https://drive.google.com/file/d/1mA9u-euNmxNT6isDTAR-1cjWYWNtkZom/view?usp=sharing")
     );
   }
-  
+  document.querySelectorAll(".project-card").forEach(function (card) {
+  card.addEventListener("click", function () {
+    const details = card.querySelector(".project-details");
+    details.classList.toggle("show-details");
+  });
+});
+
