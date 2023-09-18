@@ -510,10 +510,10 @@ section .title::after {
 }
 
 /* Styles for project cards */
-.project .carousel {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  .project .carousel {
+  display: flex; /* Display cards in a row */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
 }
 
 .project .carousel .project-card {
@@ -523,7 +523,11 @@ section .title::after {
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
-  margin-bottom: 20px; /* Add spacing between cards */
+  margin-right: 20px; /* Add spacing between cards */
+}
+
+.project .carousel .project-card:last-child {
+  margin-right: 0; /* Remove right margin for the last card */
 }
 
 .project .carousel .project-card .box {
@@ -576,6 +580,7 @@ section .title::after {
   border: 3px solid #2253c8;
   transition: all 0.3s ease;
 }
+
 
 
 .react-activity-calendar .calendar {
