@@ -510,21 +510,23 @@ section .title::after {
 }
 
 /* Styles for project cards */
-.project-card {
+.project .carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project .carousel .project-card {
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
+  margin-bottom: 20px; /* Add spacing between cards */
 }
 
-.project-card:hover {
-  background: #2253c8;
-  color: white;
-}
-
-.project-card .box {
+.project .carousel .project-card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -532,17 +534,12 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.project-card:hover .box {
-  transform: scale(1.05);
-}
-
-.project-title {
+.project .carousel .project-card .project-title {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
-/* Styles for repo and demo links */
 .repo-links {
   display: flex;
   justify-content: space-between;
@@ -554,7 +551,7 @@ section .title::after {
 .repo-div,
 .demo-div {
   display: flex;
-  width: 35%;
+  width: 45%; /* Adjust the width as needed */
   border: 1px solid white;
   justify-content: center;
   align-items: center;
@@ -571,19 +568,13 @@ section .title::after {
   color: white;
 }
 
-
-/* Styles for project card images */
-.project-card img {
+.project .carousel .project-card img {
   height: 250px;
   width: 330px;
   object-fit: cover;
   border-radius: 3%;
   border: 3px solid #2253c8;
   transition: all 0.3s ease;
-}
-
-.project-card:hover img {
-  border-color: #fff;
 }
 
 
