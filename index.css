@@ -518,6 +518,71 @@ section .title::after {
 .project .project-content .slider .card .card-category span {
   color: #2253c8;
 }
+.project {
+  background-color: #f1f5f9;
+  padding-bottom: 10px;
+}
+
+.project .project-content {
+  padding: 100px 0;
+}
+
+.project .project-content .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project .project-content .title span {
+  color: #2253c8;
+}
+
+.project .project-content .slider {
+  position: relative;
+  max-width: 1300px;
+  margin-top: 20px;
+}
+
+.project .project-content .slider .card-container {
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project .project-content .slider .card {
+  flex: 0 0 calc(100% - 40px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.project .project-content .slider .card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Add the following CSS for showing details by default and hiding them on hover */
+.project .project-content .slider .card .card-info {
+  padding: 15px;
+  opacity: 0; /* Hide details by default */
+  height: 0; /* Hide details by default */
+  overflow: hidden; /* Hide details by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: opacity 0.3s ease, height 0.3s ease;
+  z-index: 1;
+}
+
+.project .project-content .slider .card:hover .card-info {
+  opacity: 1; /* Show details on hover */
+  height: auto; /* Show details on hover */
+}
 
 .contact {
   background-color: rgb(255, 255, 255);
