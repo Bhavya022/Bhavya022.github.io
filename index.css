@@ -512,8 +512,9 @@ section .title::after {
 /* Styles for project cards */
 
   .project .carousel {
-  display: flex; /* Display cards in a row */
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
+display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .project .carousel .project-card {
