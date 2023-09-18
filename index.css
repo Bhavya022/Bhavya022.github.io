@@ -1110,4 +1110,37 @@ footer span a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
   gap: 20px;
+} 
+/* Add this CSS for the project grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px;
+}
+
+.project-card {
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Adjust the grid layout for smaller screens */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+  }
 }
