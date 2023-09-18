@@ -583,6 +583,19 @@ section .title::after {
   opacity: 1; /* Show details on hover */
   height: auto; /* Show details on hover */
 }
+.project .card .card-info {
+  padding: 15px;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: opacity 0.3s ease, height 0.3s ease;
+  z-index: 1;
+}
 
 .contact {
   background-color: rgb(255, 255, 255);
