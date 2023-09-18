@@ -1016,7 +1016,7 @@ footer span a:hover {
   /* navbar styling */
   #nav-menu {
     position: fixed;
-    width: 95%;
+    width: 100%;
     z-index: 999;
     padding: 30px 0;
     font-family: "Ubuntu", sans-serif;
@@ -1104,4 +1104,10 @@ footer span a:hover {
     height: auto;
   display: block;  /* Ensure proper block-level behavior */
     margin: auto;/* Maintain the image's aspect ratio */
+} 
+
+.project_container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px;
 }
