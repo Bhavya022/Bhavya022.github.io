@@ -509,7 +509,8 @@ section .title::after {
   width: 100%;
 }
 
-.project .carousel .project-card {
+/* Styles for project cards */
+.project-card {
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
@@ -518,13 +519,12 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.project .carousel .project-card:hover {
+.project-card:hover {
   background: #2253c8;
   color: white;
-  /* change */
 }
 
-.project .carousel .project-card .box {
+.project-card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -532,33 +532,26 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.project .carousel .project-card:hover .box {
+.project-card:hover .box {
   transform: scale(1.05);
 }
 
-.project .carousel .project-card .project-title {
+.project-title {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
+/* Styles for repo and demo links */
 .repo-links {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 45px;
   margin-top: 5%;
-  /* border: 2px solid wheat; */
 }
 
-.repo-div {
-  display: flex;
-  width: 35%;
-  border: 1px solid white;
-  justify-content: center;
-  align-items: center;
-}
-
+.repo-div,
 .demo-div {
   display: flex;
   width: 35%;
@@ -573,14 +566,14 @@ section .title::after {
 
 .demo-div a,
 .repo-div a,
-.repo-div a:link,
-.demo-div a:link,
 .project-tech-stack {
   text-decoration: none;
   color: white;
 }
 
-.project .carousel .project-card img {
+
+/* Styles for project card images */
+.project-card img {
   height: 250px;
   width: 330px;
   object-fit: cover;
@@ -589,10 +582,10 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.project .carousel .project-card:hover img {
+.project-card:hover img {
   border-color: #fff;
-  color: white;
 }
+
 
 .react-activity-calendar .calendar {
   border: none;
