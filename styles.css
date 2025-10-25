@@ -167,6 +167,8 @@ a {
     color: #555;
     margin-bottom: 2rem;
     line-height: 1.8;
+    text-align: left;
+    padding-left: 0;
 }
 
 .hero-buttons {
